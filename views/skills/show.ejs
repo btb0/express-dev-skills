@@ -8,16 +8,12 @@
     <title>Express Dev Skills</title>
 </head>
 <body>
-    <h1>My Developer Skills</h1>
-    <ul>
-        <% skills.forEach(function(s) { %>
-            <li>
-                <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-                    -
-                <p>Learning: <%= s.learning ? 'yes' : 'not yet' %></p>
-            </li>
-        <% }) %>
-    </ul>
+    <h1><%= skill.skill %></h1>
+    <h3>Am I currently learning it?</h3>
+    <p><%= skill.learning ? 'yes' : 'not yet' %></p>
+    <br>
     <a href="/">Home</a>
+    |
+    <a href="/skills">All Skills</a>
 </body>
 </html>
