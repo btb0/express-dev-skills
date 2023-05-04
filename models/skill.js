@@ -11,7 +11,8 @@ const skills = [
 
   module.exports = {
     getAll,
-    getOne
+    getOne,
+    create
   }
 
   // Returns all skills
@@ -23,4 +24,11 @@ const skills = [
   function getOne(id) {
     id = parseInt(id)
     return skills.find(skill => skill.id === id)
+  }
+
+  function create(skill) {
+    // generates random id
+    skill.id = Date.now() % 1000000
+    skill.learning = false
+    skills.push(skill)
   }
