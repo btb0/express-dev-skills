@@ -12,7 +12,8 @@ const skills = [
   module.exports = {
     getAll,
     getOne,
-    create
+    create,
+    deleteOne
   }
 
   // Returns all skills
@@ -26,9 +27,17 @@ const skills = [
     return skills.find(skill => skill.id === id)
   }
 
+  // Creates new skill
   function create(skill) {
     // generates random id
     skill.id = Date.now() % 1000000
     skill.learning = false
     skills.push(skill)
+  }
+
+  // Deletes a skill
+  function deleteOne(id) {
+    id = parseInt(id)
+    const idx = skills.findIndex(skill => skill.id === id)
+    skills.splice(idx, 1)
   }

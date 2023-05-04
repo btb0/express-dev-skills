@@ -10,3 +10,16 @@ a {
 p {
   display: inline-block;
 }
+
+.delete {
+  display: inline-block;
+  margin-right: 10px;
+}
+	
+.delete button {
+  color: black;
+}
+	
+li {
+  list-style: none;
+}
