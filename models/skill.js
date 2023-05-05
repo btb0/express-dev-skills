@@ -13,7 +13,8 @@ const skills = [
     getAll,
     getOne,
     create,
-    deleteOne
+    deleteOne,
+    update
   }
 
   // Returns all skills
@@ -40,4 +41,11 @@ const skills = [
     id = parseInt(id)
     const idx = skills.findIndex(skill => skill.id === id)
     skills.splice(idx, 1)
+  }
+
+  // Updates a skill
+  function update(id, updatedSkill) {
+    id = parseInt(id)
+    const skill = skills.find(skill => skill.id === id)
+    Object.assign(skill, updatedSkill)
   }
