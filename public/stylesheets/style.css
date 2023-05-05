@@ -1,10 +1,35 @@
+* {
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(14, 17, 22);
+  color: rgb(48, 53, 54);
+  font: 14px 'Poppins', sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vmin;
 }
 
 a {
   color: #00B7FF;
+  text-decoration: none;
+}
+
+span {
+  color: rgb(73, 78, 79);
+}
+
+a:hover {
+  color: #91e0ff;
 }
 
 p {
@@ -17,9 +42,76 @@ p {
 }
 	
 .delete button {
-  color: black;
+  color: #009dff;
+  border: 1px solid rgb(20, 25, 28);
+  padding: .8vmin;
 }
 	
 li {
   list-style: none;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-start;
+  height: 10vmin;
+  background-color: rgb(20, 23, 26);
+}
+
+#nav-bar > a {
+  color: #009dff;
+}
+
+#nav-bar div {
+  font-size: 2vmin;
+  margin: 2vmin;
+  padding: 2vmin;
+}
+
+#nav-bar div:hover {
+  color: #91e0ff;
+}
+
+input {
+  background-color: rgb(21, 26, 31);
+  border: 1px solid #009dff;
+  color: #009dff;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+button {
+  padding: 5px;
+  font-size: 12px;
+  margin-left: 5px;
+  border: 1px solid #009dff;
+  background-color: rgb(20, 25, 28);
+  color: #009dff;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color:#009dff;
+  color: rgb(20, 25, 28);
+  border: rgb(20, 25, 28);
+
+}
+
+h1 {
+  font-size: 7vmin;
+  margin-top: 0;
+  /* font-size: 5vmin; */
+  color: rgb(30, 35, 37);
+}
+
+h2 {
+  font-size: 5vmin;
+}
+
+h3 {
+  font-size: 2vmin;
+}
+
+.answer {
+  font-size: 2vmin;
 }

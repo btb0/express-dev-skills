@@ -8,11 +8,11 @@
                     method="POST" 
                     class="delete"
                 >
-                    <button type="submit">x</button>
+                    <button type="submit">X</button>
                 </form>
                 <a href="/skills/<%= s.id %>"><%= s.skill %></a>
-                    -
-                <p>Learning: <%= s.learning ? 'yes' : 'not yet' %></p>
+                <p>   —  </p>
+                <p>Learning: <span><%= s.learning ? 'yes' : 'not yet' %></span></p>
             </li>
         <% }) %>
     </ul>
