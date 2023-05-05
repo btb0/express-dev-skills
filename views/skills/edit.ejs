@@ -3,6 +3,12 @@
 <form action="/skills/<%= skill.id %>?_method=PUT" method="POST">
     <input type="text" name="skill" value="<%= skill.skill %>">
     <button type="submit">Save</button>
+    <br>
+    <br>
+    <label>
+        Currently Learning Skill
+        <input type="checkbox" name="learning"<%= skill.learning ? 'checked' : '' %>>
+    </label>
 </form>
 
 <%- include('../partials/footer') %>

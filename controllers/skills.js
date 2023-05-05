@@ -49,6 +49,7 @@ function edit(req, res) {
 }
 
 function update(req, res) {
+    req.body.learning = !!req.body.learning
     Skill.update(req.params.id, req.body)
     res.redirect(`/skills/${req.params.id}`)
 }
